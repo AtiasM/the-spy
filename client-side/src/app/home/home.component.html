@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div class="home-container">
+    <h1>SPY</h1>
+  
+    <div *ngIf="winner; else newGame">
+      <p><strong> 🎉{{ winner }}</strong>!  המנצח הוא:</p>
+      <button (click)="startNewGame()">Start New Game</button>
+    </div>
+  
+    <ng-template #newGame>
+      <button (click)="onGameOver('Player 1')">Simulate Game Over</button>
+    </ng-template>
+  </div>
+  
