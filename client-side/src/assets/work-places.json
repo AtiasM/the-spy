@@ -1,153 +1,195 @@
 [
-    {
-      "place": "Space Station",
-      "positions": [
-        "Captain",
-        "Engineer",
-        "Scientist",
-        "Doctor",
-        "Pilot",
-        "Mission Specialist",
-        "Communications Officer",
-        "Navigator",
-        "Mechanic",
-        "Security Officer"
-      ]
-    },
-    {
-      "place": "Hospital",
-      "positions": [
-        "Surgeon",
-        "Nurse",
-        "Anesthesiologist",
-        "Radiologist",
-        "Receptionist",
-        "Pharmacist",
-        "Paramedic",
-        "Medical Student",
-        "Janitor",
-        "Psychologist"
-      ]
-    },
-    {
-      "place": "Pirate Ship",
-      "positions": [
-        "Captain",
-        "First Mate",
-        "Navigator",
-        "Cook",
-        "Cabin Boy",
-        "Deckhand",
-        "Gunner",
-        "Doctor",
-        "Quartermaster",
-        "Boatswain"
-      ]
-    },
-    {
-      "place": "Airplane",
-      "positions": [
-        "Pilot",
-        "Co-pilot",
-        "Flight Attendant",
-        "Passenger",
-        "Security Officer",
-        "Ground Crew",
-        "Navigator",
-        "Engineer",
-        "Steward",
-        "Baggage Handler"
-      ]
-    },
-    {
-      "place": "Amusement Park",
-      "positions": [
-        "Ride Operator",
-        "Ticket Seller",
-        "Security Guard",
-        "Cleaner",
-        "Food Vendor",
-        "Mechanic",
-        "Entertainer",
-        "Photographer",
-        "First Aid Worker",
-        "Maintenance Worker"
-      ]
-    },
-    {
-      "place": "Police Station",
-      "positions": [
-        "Police Officer",
-        "Detective",
-        "Forensic Analyst",
-        "Receptionist",
-        "Captain",
-        "Lieutenant",
-        "Sergeant",
-        "Lawyer",
-        "Prison Guard",
-        "Dispatcher"
-      ]
-    },
-    {
-      "place": "Beach",
-      "positions": [
-        "Lifeguard",
-        "Surfer",
-        "Tourist",
-        "Beach Vendor",
-        "Swimmer",
-        "Fisherman",
-        "Photographer",
-        "Ice Cream Seller",
-        "Rescue Worker",
-        "Boat Rental Operator"
-      ]
-    },
-    {
-      "place": "Restaurant",
-      "positions": [
-        "Chef",
-        "Sous Chef",
-        "Waiter",
-        "Host",
-        "Bartender",
-        "Dishwasher",
-        "Busboy",
-        "Sommelier",
-        "Manager",
-        "Pastry Chef"
-      ]
-    },
-    {
-      "place": "University",
-      "positions": [
-        "Professor",
-        "Student",
-        "Janitor",
-        "Librarian",
-        "Lab Technician",
-        "Administrator",
-        "IT Support",
-        "Security Guard",
-        "Researcher",
-        "Coach"
-      ]
-    },
-    {
-      "place": "Cruise Ship",
-      "positions": [
-        "Captain",
-        "Engineer",
-        "Chef",
-        "Steward",
-        "Entertainer",
-        "Bartender",
-        "Housekeeper",
-        "Tour Guide",
-        "Security Officer",
-        "Passenger"
-      ]
-    }
-  ]
+  {
+    "place": "מחלקת אג״מ",
+    "positions": [
+      "קצין אגם",
+      "קמב״ץ",
+      "קמ״ן",
+      "סמב״צ",
+      "סמב״צ",
+      "קצין חמ״ל",
+      "סמב״צית חטיבה",
+      "ע. קמ״ן",
+      "מש״ק מודיעין",
+      "תורן קשר"
+    ]
+  },
+  {
+    "place": "פלס״מ ח״יר",
+    "positions": [
+      "מג״ד",
+      "סמג״ד",
+      "קח״ש",
+      "קל״ג",
+      "מפ״מ",
+      "קצין אגם",
+      "קמב״ץ",
+      "קמ״ן",
+      "שליש",
+      "קשר״ג",
+      "טבח",
+      "אפסנאי",
+      "נשק",
+      "סמב״צ",
+      "רס״פ",
+      "חייל קשר",
+      "נהג",
+      "חפ״ק",
+      "קצין רכב"
+    ]
+  },
+  {
+    "place": "בית ספר",
+    "positions": [
+      "מנהל",
+      "מורה למדעים",
+      "מורה לאנגלית",
+      "מורה למתמטיקה",
+      "מזכירה",
+      "שומר",
+      "יועץ חינוכי",
+      "ספרן",
+      "מורה לחינוך גופני",
+      "מורה לאומנות"
+    ]
+  },
+  {
+    "place": "בית חולים",
+    "positions": [
+      "רופא מנתח",
+      "רופא משפחה",
+      "אחות",
+      "מנהל מחלקה",
+      "טכנאי רנטגן",
+      "פארמדיק",
+      "עובד סוציאלי",
+      "מזכיר רפואי",
+      "שומר",
+      "מנקה"
+    ]
+  },
+  {
+    "place": "מסעדה",
+    "positions": [
+      "שף",
+      "טבח",
+      "מנהל משמרת",
+      "מלצר",
+      "ברמן",
+      "שוטף כלים",
+      "מנהל מסעדה",
+      "מארח",
+      "שף קינוחים",
+      "מנהל רכש"
+    ]
+  },
+  {
+    "place": "משרד עורכי דין",
+    "positions": [
+      "עורך דין",
+      "מזכיר",
+      "מנהל משרד",
+      "מתמחה",
+      "מנהלת חשבונות",
+      "שומר",
+      "יועץ משפטי",
+      "איש יחסי ציבור",
+      "שליח",
+      "מגייס עובדים"
+    ]
+  },
+  {
+    "place": "סופרמרקט",
+    "positions": [
+      "קופאי",
+      "מנהל סניף",
+      "מנהל מחלקה",
+      "סדרן",
+      "שומר",
+      "איש מכירות",
+      "מנהל מחסן",
+      "אחראי קופות",
+      "מנהל שיווק",
+      "נציג שירות לקוחות"
+    ]
+  },
+  {
+    "place": "תחנת משטרה",
+    "positions": [
+      "שוטר",
+      "חוקר",
+      "בלש",
+      "מפקד תחנה",
+      "סגן מפקד",
+      "שומר",
+      "רכז מודיעין",
+      "מנהל מחלקה פלילית",
+      "מומחה טכנולוגיות",
+      "קצין תנועה"
+    ]
+  },
+  {
+    "place": "שדה תעופה",
+    "positions": [
+      "דייל קרקע",
+      "מאבטח",
+      "מנהל שדה",
+      "טייס",
+      "דייל אוויר",
+      "בקר טיסה",
+      "מנהל לוגיסטיקה",
+      "עובד שירות לקוחות",
+      "מנהל מסוף",
+      "עובד ניקיון"
+    ]
+  },
+  {
+    "place": "תחנת כיבוי אש",
+    "positions": [
+      "כבאי",
+      "מפקד צוות",
+      "נהג רכב כיבוי",
+      "איש לוגיסטיקה",
+      "רכז הדרכה",
+      "אחראי תחזוקה",
+      "איש תקשורת",
+      "קצין בטיחות",
+      "עובד רפואה חירום",
+      "רכז מבצעים"
+    ]
+  },
+  {
+    "place": "אוניברסיטה",
+    "positions": [
+      "פרופסור",
+      "מרצה",
+      "סטודנט",
+      "רכז קורס",
+      "ספרן",
+      "עוזר מחקר",
+      "מזכיר מחלקה",
+      "מנהל פקולטה",
+      "יועץ אקדמי",
+      "איש אבטחה"
+    ]
+  },
+  {
+    "place": "חברת הייטק",
+    "positions": [
+      "מתכנת",
+      "מנהל פרויקט",
+      "מנהל מוצר",
+      "מעצב UX/UI",
+      "בודק תוכנה",
+      "מנהל משאבי אנוש",
+      "איש תמיכה טכנית",
+      "מנהל כספים",
+      "איש שיווק",
+      "מנהל צוות פיתוח"
+    ]
+  }
+]
+
+
+
   
