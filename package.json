@@ -1,0 +1,20 @@
+{
+  "name": "the-spy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i --force && npx ng build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtiasM/the-spy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtiasM/the-spy/issues"
+  },
+  "homepage": "https://github.com/AtiasM/the-spy#readme"
+}
