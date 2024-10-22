@@ -1,0 +1,18 @@
+<div *ngIf="currentPlayerIndex < players.length">
+    <h2>{{ getCurrentPlayer() }}</h2>
+    <button *ngIf="!isDisplayed" (click)="displayRole()">Display</button>
+    
+    <div *ngIf="isDisplayed">
+      <p *ngIf="role != 'spy'"> {{ selectedWorkplace.place }}</p>  
+      <p>Your role is: {{ role }}</p>
+      <button (click)="nextPlayer()">Next</button>
+    </div>
+  </div>
+
+<button *ngIf="currentPlayerIndex == players.length && !startGame" (click)="onStartClicked()"> Start </button>
+<app-game-round *ngIf="startGame"
+[assignedPositions]="assignedPositions"
+[timeRound]="timeRound"
+[selectedWorkplace]="selectedWorkplace!"
+[workplaces]="workplaces"
+></app-game-round>

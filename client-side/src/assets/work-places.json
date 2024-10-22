@@ -1,0 +1,153 @@
+[
+    {
+      "place": "Space Station",
+      "positions": [
+        "Captain",
+        "Engineer",
+        "Scientist",
+        "Doctor",
+        "Pilot",
+        "Mission Specialist",
+        "Communications Officer",
+        "Navigator",
+        "Mechanic",
+        "Security Officer"
+      ]
+    },
+    {
+      "place": "Hospital",
+      "positions": [
+        "Surgeon",
+        "Nurse",
+        "Anesthesiologist",
+        "Radiologist",
+        "Receptionist",
+        "Pharmacist",
+        "Paramedic",
+        "Medical Student",
+        "Janitor",
+        "Psychologist"
+      ]
+    },
+    {
+      "place": "Pirate Ship",
+      "positions": [
+        "Captain",
+        "First Mate",
+        "Navigator",
+        "Cook",
+        "Cabin Boy",
+        "Deckhand",
+        "Gunner",
+        "Doctor",
+        "Quartermaster",
+        "Boatswain"
+      ]
+    },
+    {
+      "place": "Airplane",
+      "positions": [
+        "Pilot",
+        "Co-pilot",
+        "Flight Attendant",
+        "Passenger",
+        "Security Officer",
+        "Ground Crew",
+        "Navigator",
+        "Engineer",
+        "Steward",
+        "Baggage Handler"
+      ]
+    },
+    {
+      "place": "Amusement Park",
+      "positions": [
+        "Ride Operator",
+        "Ticket Seller",
+        "Security Guard",
+        "Cleaner",
+        "Food Vendor",
+        "Mechanic",
+        "Entertainer",
+        "Photographer",
+        "First Aid Worker",
+        "Maintenance Worker"
+      ]
+    },
+    {
+      "place": "Police Station",
+      "positions": [
+        "Police Officer",
+        "Detective",
+        "Forensic Analyst",
+        "Receptionist",
+        "Captain",
+        "Lieutenant",
+        "Sergeant",
+        "Lawyer",
+        "Prison Guard",
+        "Dispatcher"
+      ]
+    },
+    {
+      "place": "Beach",
+      "positions": [
+        "Lifeguard",
+        "Surfer",
+        "Tourist",
+        "Beach Vendor",
+        "Swimmer",
+        "Fisherman",
+        "Photographer",
+        "Ice Cream Seller",
+        "Rescue Worker",
+        "Boat Rental Operator"
+      ]
+    },
+    {
+      "place": "Restaurant",
+      "positions": [
+        "Chef",
+        "Sous Chef",
+        "Waiter",
+        "Host",
+        "Bartender",
+        "Dishwasher",
+        "Busboy",
+        "Sommelier",
+        "Manager",
+        "Pastry Chef"
+      ]
+    },
+    {
+      "place": "University",
+      "positions": [
+        "Professor",
+        "Student",
+        "Janitor",
+        "Librarian",
+        "Lab Technician",
+        "Administrator",
+        "IT Support",
+        "Security Guard",
+        "Researcher",
+        "Coach"
+      ]
+    },
+    {
+      "place": "Cruise Ship",
+      "positions": [
+        "Captain",
+        "Engineer",
+        "Chef",
+        "Steward",
+        "Entertainer",
+        "Bartender",
+        "Housekeeper",
+        "Tour Guide",
+        "Security Officer",
+        "Passenger"
+      ]
+    }
+  ]
+  

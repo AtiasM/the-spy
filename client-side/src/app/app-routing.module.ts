@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { DisplayRolesComponent } from './display-roles/display-roles.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }, // Home page route
-  { path: '**', redirectTo: '' } // Redirect any unknown route to home
-];
+  {
+    path: '',
+    component: HomeComponent 
+  },
+  ]
+;
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

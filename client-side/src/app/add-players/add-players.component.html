@@ -1,0 +1,19 @@
+<div class="dialog-container">
+    <h2>Add Players</h2>
+  
+    <div *ngFor="let player of players; let i = index" class="player-item">
+      <span>{{ player }}</span>
+      <button class="remove-btn" (click)="players.splice(i, 1)">Remove</button>
+    </div>
+  
+    <input 
+      type="text" 
+      [(ngModel)]="newPlayer" 
+      placeholder="Enter player name" 
+      class="player-input"
+    />
+    <button class="add-btn" (click)="addPlayer()">Add Player</button>
+    
+    <button class="save-btn" (click)="save()">Save Players</button>
+  </div>
+  

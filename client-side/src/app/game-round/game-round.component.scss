@@ -1,0 +1,86 @@
+.game-round-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .timer-container {
+    margin: 20px auto;
+  }
+  
+  .big-green-timer {
+    font-size: 3rem;
+    color: green;
+  }
+
+  .players-grid {
+    display: flex;
+    flex-wrap: wrap; // Allow wrapping to the next row
+    justify-content: center; // Center the buttons
+    margin: 20px 0; // Add some spacing above and below
+  }
+  
+  .player-button {
+    margin: 10px; // Spacing between buttons
+  }
+
+  .players-grid {
+    max-width: 600px; // Limit the width of the grid
+    margin: 0 auto; // Center the grid
+  }
+  
+  .player-button {
+    flex: 1 1 calc(33.333% - 20px); // 3 buttons in a row with space
+    // You can adjust the `- 20px` based on your margin
+  }
+  
+  .player-button button {
+    background-color: green; // Button color
+    color: white; // Text color
+    font-size: 1.5rem; // Increase font size for better readability
+    padding: 15px 30px; // Adjust padding for bigger buttons
+    border: none; // Remove border
+    border-radius: 5px; // Round the corners
+    cursor: pointer; // Pointer cursor on hover
+    transition: background-color 0.3s; // Smooth transition for hover effect
+  }
+  
+  .player-button button:hover {
+    background-color: darkgreen; // Darker green on hover
+  }
+  
+
+  .workplaces-grid {
+    display: flex;
+    flex-wrap: wrap; // Allow wrapping to the next row
+    justify-content: center; // Center the buttons
+    margin: 20px 0; // Add some spacing above and below
+  }
+  
+  .workplace-button {
+    margin: 10px; // Spacing between buttons
+  }
+  
+  .workplace-button button {
+    background-color: green; // Button color
+    color: white; // Text color
+    font-size: 1.5rem; // Increase font size for better readability
+    padding: 15px 30px; // Adjust padding for bigger buttons
+    border: none; // Remove border
+    border-radius: 5px; // Round the corners
+    cursor: pointer; // Pointer cursor on hover
+    transition: background-color 0.3s; // Smooth transition for hover effect
+  }
+  
+  .workplace-button button:hover {
+    background-color: darkgreen; // Darker green on hover
+  }
+  .workplaces-grid {
+    max-width: 600px; // Limit the width of the grid
+    margin: 0 auto; // Center the grid
+  }
+  
+  .workplace-button {
+    flex: 1 1 calc(33.333% - 20px); // 3 buttons in a row with space
+    // You can adjust the `- 20px` based on your margin
+  }
+  

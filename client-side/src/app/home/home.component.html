@@ -1,13 +1,51 @@
-<div class="home-container">
+<div class="home-container" *ngIf="!gameStarted">
     <h1>SPY</h1>
+    <!-- Add Players Button -->
+    <button class="add-players-btn" (click)="openAddPlayersDialog()">
+        Add Players ({{ players.length }})
+    </button>
   
-    <div *ngIf="winner; else newGame">
-      <p><strong> 🎉{{ winner }}</strong>!  המנצח הוא:</p>
-      <button (click)="startNewGame()">Start New Game</button>
+    <!-- Control for Number of Spies -->
+    <div class="control-group">
+      <label for="spies">Spies:</label>
+      <div class="control">
+        <button class="small-btn" (click)="changeSpyCount(-1)">-</button>
+        <input id="spies" type="number" [value]="spyCount" readonly />
+        <button class="small-btn" (click)="changeSpyCount(1)">+</button>
+      </div>
     </div>
   
-    <ng-template #newGame>
-      <button (click)="onGameOver('Player 1')">Simulate Game Over</button>
-    </ng-template>
+    <!-- Control for Minutes per Round -->
+    <div class="control-group">
+      <label for="roundTime">Minutes:</label>
+      <div class="control">
+        <button class="small-btn" (click)="changeRoundTime(-1)">-</button>
+        <input id="roundTime" type="number" [value]="roundTime" readonly />
+        <button class="small-btn" (click)="changeRoundTime(1)">+</button>
+      </div>
+    </div>
+  
+    <!-- Start Game Button -->
+    <button
+      class="start-btn"
+      (click)="startGame()"
+      [disabled]="players.length < 3 || spyCount >= players.length"
+    >
+      Start Game
+    </button>
   </div>
   
+  
+<!-- <app-game-round *ngIf="gameStarted"
+[assignedPositions]="assignedPositions"
+[timeRound]="roundTime"
+[selectedWorkplace]="workplace!"
+[workplaces]="workplacesNames"
+></app-game-round> -->
+
+<app-display-roles *ngIf="gameStarted"
+[assignedPositions]="assignedPositions"
+[timeRound]="roundTime"
+[selectedWorkplace]="workplace!"
+[workplaces]="workplacesNames"
+></app-display-roles>

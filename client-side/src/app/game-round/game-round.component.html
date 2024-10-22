@@ -1,0 +1,42 @@
+<div class="game-round-container">
+
+    <div class="timer-container" *ngIf="!timerEnded">
+      <cd-timer 
+        #timer 
+        [startTime]="timeRound" 
+        [countdown]="true" 
+        format="mm:ss" 
+        (onStop)="onTimerEnd()"
+        class="big-green-timer">
+      </cd-timer>
+    </div>
+  
+    <div *ngIf="timerEnded && !isRoundEnded" class="choose-spy-container">
+      <h2>Select the spy:</h2>
+      <div class="players-grid">
+        <div *ngFor="let player of playersArray" class="player-button">
+          <button (click)="onSpyChosen(player)">{{ player }}</button>
+        </div>
+      </div>
+    </div>
+  
+    <div *ngIf="chosenPlayer && !isRoundEnded">
+        <h2>You have chosen: {{ chosenPlayer }}</h2>
+        <h3>Select a workplace:</h3>
+        <div class="workplaces-grid">
+          <div *ngFor="let workplace of workplaces" class="workplace-button">
+            <button (click)="selectWorkplace(workplace)">{{ workplace }}</button>
+          </div>
+        </div>
+    </div>
+    <div *ngIf="isRoundEnded">
+        <h2>{{ resultMessage }}</h2>
+        <div *ngIf="gameOver; else continue">
+          <button (click)="continueClicked()">NEW GAME</button>
+        </div>
+        <ng-template #continue>
+          <button (click)="continueClicked()">CONTINUE</button>
+        </ng-template>
+      </div>
+  </div>
+  
