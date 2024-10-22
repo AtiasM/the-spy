@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,6 +11,7 @@ export class DisplayRolesComponent implements OnInit {
   @Input() assignedPositions!: { [player: string]: string };
   @Input() timeRound: number = 1;
   @Input() workplaces: string[] = []
+  @Output() newGameEvent: EventEmitter<void> = new EventEmitter()
   players: string[] = []
   currentPlayerIndex: number = 0; // Track the current player being displayed
   role: string = ''; // Store the current player's role
@@ -43,5 +44,10 @@ export class DisplayRolesComponent implements OnInit {
 
   onStartClicked(){
     this.startGame = true
+  }
+
+  onNewGame(){
+    this.startGame = false
+    this.newGameEvent.emit()
   }
 }

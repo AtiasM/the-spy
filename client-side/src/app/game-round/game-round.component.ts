@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-game-round',
@@ -10,13 +11,14 @@ export class GameRoundComponent {
   @Input() assignedPositions!: { [player: string]: string };
   @Input() timeRound: number = 1;
   @Input() workplaces: string[] = []
+  @Output() newGameEvent: EventEmitter<void> = new EventEmitter()
   playersArray: string[] = []
   timerEnded = false;
   chosenPlayer?: string
   gameOver: boolean = false
   isRoundEnded: boolean = false 
   resultMessage: string = ""
-
+  constructor(private router: Router){}
   ngOnInit(){
     this.playersArray = Object.keys(this.assignedPositions)
   }
@@ -31,10 +33,14 @@ export class GameRoundComponent {
   }
 
   selectWorkplace(workplaceName: string){
-    debugger
     const isSpy = this.assignedPositions[this.chosenPlayer!] == "spy"
     const isPlaceCorrect = workplaceName === this.selectedWorkplace.place
-    if(isSpy && isPlaceCorrect){
+    //if there is no more spies, non spies won
+    if(this.playersArray.every(player => this.assignedPositions[player] !== "spy")){
+      this.resultMessage = "GAME OVER, NON SPIES WON"
+      this.gameOver = true
+    }
+    else if(isSpy && isPlaceCorrect){
       this.resultMessage = "GAME OVER, SPIES ONE"
       this.gameOver = true; // Set game over to true
     }
@@ -59,7 +65,7 @@ export class GameRoundComponent {
     }
   }
   newGame(){
-
+    this.newGameEvent.emit()
   }
   continueGame(){
     this.chosenPlayer = ""

@@ -75,7 +75,6 @@ export class HomeComponent {
     // Assign positions to players
     this.assignPositions();
     this.gameStarted = true;
-    debugger
     console.log('Game started with workplace:', this.workplace);
     console.log('Assigned positions:', this.assignedPositions);
   }
@@ -87,7 +86,6 @@ export class HomeComponent {
     const shuffledPlayers = shuffle(this.players)
     //assign spies 
     let remainingSpiesCount = this.spyCount
-    debugger
     while(remainingSpiesCount > 0){
       const newSpy = shuffledPlayers.pop() as string
       this.assignedPositions[newSpy] = "spy"
@@ -110,10 +108,19 @@ export class HomeComponent {
 
   canStartGame(): boolean {
     return (
-      this.players.length > 3 &&
+      this.players.length >= 3 &&
       this.spyCount > 0 &&
       this.spyCount < this.players.length &&
       this.roundTime > 1
     );
+  }
+  onNewGame(){
+    this.players = []
+    this.workplace = undefined
+    this.spyCount = 1
+    this.roundTime = 3 
+    this.assignedPositions = {}
+    this.workplacesNames = []
+    this.gameStarted = false 
   }
 }
